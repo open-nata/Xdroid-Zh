@@ -1,25 +1,28 @@
 ## Xdroid
-Xdroid provides a convenient float window to start/stop the test process and users can access the window at everywhere on the device screen. It makes toasts with information and plays a ring tone to inform users to offer help. What's more, Xdroid implements a plain UI to configure the behavior of Xdroid and review test reports.
+Xdroid提供了一个方便的浮动窗口来启动/停止测试过程，用户可以在设备屏幕上的任何位置访问窗口。Xdroid会提供Toast信息并播放铃声来通知用户提供帮助。 此外，Xdroid还实现了一个简单的UI来配置Xdroid的行为并且可以方便的查看测试报告。
 
-### Float window and notifications
+
+### 悬浮窗和通知
 
 ![](images/floatwindow.png)
 
-### Main function UI
+### 主要界面
 
 ![](images/main.png)
 
-## Experiment setup
-Since automated testing can not provide the resources that apps depend on, manual testing is expensive and cannot effectively detect bugs as random testing. We conduct experiments to evaluate if Xdroid can combine the benefits of both manual testing and random testing to increase test efficiency.
+## 实验设置
+由于自动测试无法提供应用程序所依赖的资源，手动测试比较昂贵并且无法像随机测试那样有效检测错误。 因此我们设计了实验来评估Xdroid是否可以结合手动测试和随机测试的优点来提高测试效率。
 
-We evaluated Xdroid with two other effective approaches in this study: manual testing and Monkey test tool provided by Android. For manual testing and Xdroid, we invited five users to help with the process of test and all five users we chose in this study are students at Nanjing University who have experience using Android apps.
+我们在本研究中用另外三种有效的方法评估了Xdroid：Android提供的手动测试和Monkey测试工具和Sapienz进化测试工具。 对于手动测试和Xdroid，我们邀请了五位用户帮助测试过程，我们在本研究中选择的所有五位用户都是南京大学的具有使用Android应用经验的学生。
 
-## List of apps
-We selected 12 commercial apps which are used by millions of users from [Google play top charts](https://play.google.com/store/apps/top) and 8 open-source apps from the Android open-source apps repository [F-Droid](https://f-droid.org/). The number of activities listed in the AndroidManifest file of these apps ranges from 7 to 705, with a mean of 100. The SLOC of open source apps ranges from 1k to 21K, with a mean of 8K.
+
+## App列表
+我们从[Google Play top charts]（https://play.google.com/store/apps/top）中选出了12个有数百万用户的商业应用并且从Android开源应用资源库[F-droid]（https://f-droid.org/）中选出了8个开源应用程式。这些应用程序的AndroidManifest文件中列出的活动数量范围为7到705，平均为100.开源应用程序的SLOC范围从1K到21K，平均为8K。
+
 
 ![](images/apps.png)
 
-## Code coverage results for open-source apps
+## 开源应用代码覆盖率结果
 
 |Subject       |               |	   |	  |	   | Monkey |	| 	| Xdroid |	|           | 	| Manual	|    |     | Sapienz	| | |
 | ------       | --------      |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |
@@ -35,7 +38,7 @@ We selected 12 commercial apps which are used by millions of users from [Google 
 
 ![](images/open.png)
 
-## Activity coverage results for commercial apps
+## 商业应用Activity覆盖率
 
 |Subject |  |	|	|	| Monkey |	| 	| Xdroid |	|           | 	| Manual	| | | Sapienz		| | |
 | ---- | --- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |
@@ -56,7 +59,7 @@ We selected 12 commercial apps which are used by millions of users from [Google 
 
 ![](images/google.png)
 
-## Bugs Found
+## 找到的Bug
 
 | Subject     |    Bugs  |
 | ---         |    ---   |
