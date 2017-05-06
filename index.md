@@ -17,16 +17,16 @@ Xdroid提供了一个方便的浮动窗口来启动/停止测试过程，用户�
 
 
 ## App列表
-我们从[Google Play top charts]（https://play.google.com/store/apps/top）中选出了12个有数百万用户的商业应用并且从Android开源应用资源库[F-droid]（https://f-droid.org/）中选出了8个开源应用程式。这些应用程序的AndroidManifest文件中列出的活动数量范围为7到705，平均为100.开源应用程序的SLOC范围从1K到21K，平均为8K。
+我们从[Google Play top charts](https://play.google.com/store/apps/top)中选出了12个有数百万用户的商业应用并且从Android开源应用资源库[F-droid](https://f-droid.org/)中选出了8个开源应用程式。这些应用程序的AndroidManifest文件中列出的活动数量范围为7到705，平均为100.开源应用程序的SLOC范围从1K到21K，平均为8K。
 
 
 ![](images/apps.png)
 
 ## 开源应用代码覆盖率结果
 
-|Subject       |               |	   |	  |	   | Monkey |	| 	| Xdroid |	|           | 	| Manual	|    |     | Sapienz	| | |
+|被测应用       |               |	   |	  |	   | Monkey |	| 	| Xdroid |	|           | 	| Manual	|    |     | Sapienz	| | |
 | ------       | --------      |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |
-|Subject Name	 | Category      |	#Activity	| App pkg	| Version	| Cov |	#ANR	| #Crash	| Manual(min) |	Cov	| #ANR	 | #Crash	| Cov	| #ANR	| #Crash | Cov	| #ANR	| #Crash |
+|应用名称	 | 类别     |	Activity数量	| App 包名	| 版本	| 覆盖率 |	#ANR	| #Crash	| 人工时间(分钟) |	覆盖率	| #ANR	 | #Crash	| 覆盖率	| #ANR	| #Crash | 覆盖率	| #ANR	| #Crash |
 |AnyMemo       |	Education	   | 35	| org.liberty.android.fantastischmemo	| 8.3.1 |	25.32 |	0	|1	|3	|27.21 |	1	| 1	| 35.92 |	0	| 1 | 5.59 | 0 | 0 |
 |BookCatalogue |	Productivity | 22	| com.eleybourn.bookcatalogue	| 3.8	| 18.45 |	0	| 1	| 4	 |43.13 |	0	|2	| 43.32 |	0	|0|3.15 | 0 | 0 |
 |Mileage	     |  Finance	     | 51	| com.evancharlton.mileage	|3.1.1	|	23.22 |	0	|0	|3	| 55.08 |	0	|3	|53.68 |	0	|2|20.68  | 0 | 0 |
@@ -40,9 +40,9 @@ Xdroid提供了一个方便的浮动窗口来启动/停止测试过程，用户�
 
 ## 商业应用Activity覆盖率
 
-|Subject |  |	|	|	| Monkey |	| 	| Xdroid |	|           | 	| Manual	| | | Sapienz		| | |
-| ---- | --- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |
-|Subject Name	| Category |	#Activity	| App pkg	| Version	| Cov |	#ANR	| #Crash	| Manual(min) |	Cov	| #ANR	 | #Crash	| Cov	| #ANR	| #Crash | Cov	| #ANR	| #Crash |
+|被测应用       |               |	   |	  |	   | Monkey |	| 	| Xdroid |	|           | 	| Manual	|    |     | Sapienz	| | |
+| ------       | --------      |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |
+|应用名称	 | 类别     |	Activity数量	| App 包名	| 版本	| 覆盖率 |	#ANR	| #Crash	| 人工时间(分钟) |	覆盖率	| #ANR	 | #Crash	| 覆盖率	| #ANR	| #Crash | 覆盖率	| #ANR	| #Crash |
 |wish        |	Shopping	    | 49	| com.contextlogic.wish	  | 4.2.1             |	12.24 |	0	| 0	| 5	|	30.61 |	0	| 0	| 	42.85 |	0	| 0 | 12.24  | 0 | 0 |
 |Messenger   |	Communication | 121	| com.facebook.orca	      |33.0.0.31.250	    |	1.24 	| 0	|0	|	6	| 19.00  |	0	| 0	|19.80  | 	0	|0| 1.60  | 0 | 0 |
 |instagram   |  Media	        | 26	| com.instagram.android	  |10.3.0	 	          | 11.50 |	0	|0	|	3	| 26.92  |	0 |	0	|	34.61 | 	0	|0| 11.53 | 0 | 0 |
